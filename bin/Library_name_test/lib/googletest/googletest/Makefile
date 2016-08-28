@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/Library_name_test/lib/googletest/googletest/CMakeFiles/progress.marks
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,110 +141,102 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named PROJECT_NAME
+# Convenience name for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule
 
-# Build rule for target.
-PROJECT_NAME: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 PROJECT_NAME
-.PHONY : PROJECT_NAME
+# Convenience name for target.
+gtest: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule
 
-# fast build rule for target.
-PROJECT_NAME/fast:
-	$(MAKE) -f CMakeFiles/PROJECT_NAME.dir/build.make CMakeFiles/PROJECT_NAME.dir/build
-.PHONY : PROJECT_NAME/fast
-
-#=============================================================================
-# Target rules for targets named Library_name
-
-# Build rule for target.
-Library_name: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Library_name
-.PHONY : Library_name
-
-# fast build rule for target.
-Library_name/fast:
-	$(MAKE) -f Library_name/CMakeFiles/Library_name.dir/build.make Library_name/CMakeFiles/Library_name.dir/build
-.PHONY : Library_name/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
 .PHONY : gtest
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-#=============================================================================
-# Target rules for targets named gtest_main
+# Convenience name for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
 
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+# Convenience name for target.
+gtest_main: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
 .PHONY : gtest_main
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-#=============================================================================
-# Target rules for targets named runTests
+src/gtest-all.o: src/gtest-all.cc.o
 
-# Build rule for target.
-runTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 runTests
-.PHONY : runTests
-
-# fast build rule for target.
-runTests/fast:
-	$(MAKE) -f Library_name_test/basic_tests/CMakeFiles/runTests.dir/build.make Library_name_test/basic_tests/CMakeFiles/runTests.dir/build
-.PHONY : runTests/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : src/gtest-all.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/PROJECT_NAME.dir/build.make CMakeFiles/PROJECT_NAME.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/gtest-all.cc.o:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+.PHONY : src/gtest-all.cc.o
 
-main.i: main.cpp.i
+src/gtest-all.i: src/gtest-all.cc.i
 
-.PHONY : main.i
+.PHONY : src/gtest-all.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/PROJECT_NAME.dir/build.make CMakeFiles/PROJECT_NAME.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/gtest-all.cc.i:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+.PHONY : src/gtest-all.cc.i
 
-main.s: main.cpp.s
+src/gtest-all.s: src/gtest-all.cc.s
 
-.PHONY : main.s
+.PHONY : src/gtest-all.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/PROJECT_NAME.dir/build.make CMakeFiles/PROJECT_NAME.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/gtest-all.cc.s:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+.PHONY : src/gtest-all.cc.s
+
+src/gtest_main.o: src/gtest_main.cc.o
+
+.PHONY : src/gtest_main.o
+
+# target to build an object file
+src/gtest_main.cc.o:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+.PHONY : src/gtest_main.cc.o
+
+src/gtest_main.i: src/gtest_main.cc.i
+
+.PHONY : src/gtest_main.i
+
+# target to preprocess a source file
+src/gtest_main.cc.i:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+.PHONY : src/gtest_main.cc.i
+
+src/gtest_main.s: src/gtest_main.cc.s
+
+.PHONY : src/gtest_main.s
+
+# target to generate assembly for a file
+src/gtest_main.cc.s:
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+.PHONY : src/gtest_main.cc.s
 
 # Help Target
 help:
@@ -255,17 +247,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... gtest_main"
 	@echo "... install"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... PROJECT_NAME"
-	@echo "... Library_name"
-	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... runTests"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/gtest-all.o"
+	@echo "... src/gtest-all.i"
+	@echo "... src/gtest-all.s"
+	@echo "... src/gtest_main.o"
+	@echo "... src/gtest_main.i"
+	@echo "... src/gtest_main.s"
 .PHONY : help
 
 
@@ -277,6 +269,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/runTests.dir/test.cpp.o  -o runTests  ../lib/googletest/googletest/libgtest.a ../lib/googletest/googletest/libgtest_main.a ../../Library_name/libLibrary_name.a ../lib/googletest/googletest/libgtest.a 

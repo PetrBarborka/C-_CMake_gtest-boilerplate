@@ -9,6 +9,6 @@ add_subdirectory( Library_name )
 
 include_directories( Library_name/include )
 
-#add_subdirectory( Library_name_test )
+add_subdirectory( Library_name_test )
 
 target_link_libraries( PROJECT_NAME Library_name )

@@ -152,6 +152,178 @@ clean: Library_name/CMakeFiles/Library_name.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory Library_name_test
+
+# Convenience name for "all" pass in the directory.
+Library_name_test/all: Library_name_test/lib/googletest/googletest/all
+Library_name_test/all: Library_name_test/basic_tests/all
+
+.PHONY : Library_name_test/all
+
+# Convenience name for "clean" pass in the directory.
+Library_name_test/clean: Library_name_test/lib/googletest/googletest/clean
+Library_name_test/clean: Library_name_test/basic_tests/clean
+
+.PHONY : Library_name_test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Library_name_test/preinstall: Library_name_test/lib/googletest/googletest/preinstall
+Library_name_test/preinstall: Library_name_test/basic_tests/preinstall
+
+.PHONY : Library_name_test/preinstall
+
+#=============================================================================
+# Directory level rules for directory Library_name_test/lib/googletest/googletest
+
+# Convenience name for "all" pass in the directory.
+Library_name_test/lib/googletest/googletest/all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
+Library_name_test/lib/googletest/googletest/all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : Library_name_test/lib/googletest/googletest/all
+
+# Convenience name for "clean" pass in the directory.
+Library_name_test/lib/googletest/googletest/clean: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/clean
+Library_name_test/lib/googletest/googletest/clean: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : Library_name_test/lib/googletest/googletest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Library_name_test/lib/googletest/googletest/preinstall:
+
+.PHONY : Library_name_test/lib/googletest/googletest/preinstall
+
+#=============================================================================
+# Target rules for target Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles --progress-num=5,6 "Built target gtest"
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
+
+# Include target in all.
+all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 0
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Include target in all.
+all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 0
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Library_name_test/basic_tests
+
+# Convenience name for "all" pass in the directory.
+Library_name_test/basic_tests/all: Library_name_test/basic_tests/CMakeFiles/runTests.dir/all
+
+.PHONY : Library_name_test/basic_tests/all
+
+# Convenience name for "clean" pass in the directory.
+Library_name_test/basic_tests/clean: Library_name_test/basic_tests/CMakeFiles/runTests.dir/clean
+
+.PHONY : Library_name_test/basic_tests/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Library_name_test/basic_tests/preinstall:
+
+.PHONY : Library_name_test/basic_tests/preinstall
+
+#=============================================================================
+# Target rules for target Library_name_test/basic_tests/CMakeFiles/runTests.dir
+
+# All Build rule for target.
+Library_name_test/basic_tests/CMakeFiles/runTests.dir/all: Library_name/CMakeFiles/Library_name.dir/all
+Library_name_test/basic_tests/CMakeFiles/runTests.dir/all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+Library_name_test/basic_tests/CMakeFiles/runTests.dir/all: Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f Library_name_test/basic_tests/CMakeFiles/runTests.dir/build.make Library_name_test/basic_tests/CMakeFiles/runTests.dir/depend
+	$(MAKE) -f Library_name_test/basic_tests/CMakeFiles/runTests.dir/build.make Library_name_test/basic_tests/CMakeFiles/runTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles --progress-num=9,10 "Built target runTests"
+.PHONY : Library_name_test/basic_tests/CMakeFiles/runTests.dir/all
+
+# Include target in all.
+all: Library_name_test/basic_tests/CMakeFiles/runTests.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Library_name_test/basic_tests/CMakeFiles/runTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 Library_name_test/basic_tests/CMakeFiles/runTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles 0
+.PHONY : Library_name_test/basic_tests/CMakeFiles/runTests.dir/rule
+
+# Convenience name for target.
+runTests: Library_name_test/basic_tests/CMakeFiles/runTests.dir/rule
+
+.PHONY : runTests
+
+# clean rule for target.
+Library_name_test/basic_tests/CMakeFiles/runTests.dir/clean:
+	$(MAKE) -f Library_name_test/basic_tests/CMakeFiles/runTests.dir/build.make Library_name_test/basic_tests/CMakeFiles/runTests.dir/clean
+.PHONY : Library_name_test/basic_tests/CMakeFiles/runTests.dir/clean
+
+# clean rule for target.
+clean: Library_name_test/basic_tests/CMakeFiles/runTests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

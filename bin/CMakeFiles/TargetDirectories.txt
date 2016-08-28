@@ -1,2 +1,5 @@
+/Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/Library_name_test/basic_tests/CMakeFiles/runTests.dir
 /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/Library_name/CMakeFiles/Library_name.dir
+/Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/Library_name_test/lib/googletest/googletest/CMakeFiles/gtest_main.dir
+/Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/Library_name_test/lib/googletest/googletest/CMakeFiles/gtest.dir
 /Users/Tyler/dev/boilerplate/C++_CMake_gtest/bin/CMakeFiles/PROJECT_NAME.dir
