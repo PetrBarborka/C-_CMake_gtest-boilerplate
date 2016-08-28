@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Library_name/include/lib.hpp
+
+/Users/Tyler/dev/boilerplate/C++_CMake_gtest/main.cpp
+lib.hpp
+/Users/Tyler/dev/boilerplate/C++_CMake_gtest/lib.hpp
+iostream
+-
+
